@@ -14,6 +14,7 @@
 ActiveRecord::Schema.define(version: 20130701211913) do
 
   create_table "prototypes", force: true do |t|
+    t.string   "type"
     t.text     "fields"
     t.datetime "created_at"
     t.datetime "updated_at"
