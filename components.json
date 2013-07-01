@@ -1,0 +1,14 @@
+{
+  "vendor": {
+    "dependencies": {
+      "bootsrap": "2.3.2"
+    }
+  },
+  "name": "soyuz",
+  "version": "0.0.1",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "components"
+  ]
+}
