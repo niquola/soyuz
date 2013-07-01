@@ -1,0 +1,32 @@
+!!!
+%html
+  %head
+    %title Soyuz
+    = stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true
+    = javascript_include_tag "application", "data-turbolinks-track" => true
+    = csrf_meta_tags
+  %body
+  %body
+    .navbar.navbar-inverse.navbar-fixed-top
+      .navbar-inner
+        .container
+          %button.btn.btn-navbar{"data-target" => ".nav-collapse", "data-toggle" => "collapse", :type => "button"}
+            %span.icon-bar
+            %span.icon-bar
+            %span.icon-bar
+          %a.brand{:href => "#"} Project name
+          .nav-collapse.collapse
+            %ul.nav
+              %li.active
+                %a{:href => "#"} Home
+              %li
+                %a{:href => "#about"} About
+              %li
+                %a{:href => "#contact"} Contact
+    .container
+      %h1 Bootstrap starter template
+      %p
+        Use this document as a way to quick start any new project.
+        %br/
+        All you get is this message and a barebones HTML document.
+      = yield

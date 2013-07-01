@@ -22,7 +22,7 @@ module Soyuz
     config.generators do |g|
       g.test_framework  :rspec, fixture: false
     end
-    config.assets.paths << Rails.root.join("lib", "assets", "components")
     config.assets.paths << Rails.root.join("vendor", "assets", "components")
+    config.assets.paths << Rails.root.join("vendor", "assets", "components", "bootstrap", "less")
   end
 end
